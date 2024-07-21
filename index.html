@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Challenger - Codificador/Decodificador de texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+</head>
+<body>
+    <header></header>
+    <main class="area_apresentacao">
+        <div class="flex_principal" >
+            <h1 class="texto_apresentacao">Desafio Codificador/Decodificador de texto</h1>
+            <div>
+                <textarea class="texto_cod" placeholder="Digite sua mensagem" minlength="20"></textarea>
+                <div class="botoes_principais">
+                    <button class="btn-codificar" onclick="codificar()">Codificar</button>
+                    <button class="btn-decodificar" onclick="decodificar()">Decodificar</button>
+                </div>
+            </div>
+        </div>
+        <div class="caixa_img">
+            <img class="img_apresentacao" src="./img/img__principal.png" alt="imagem de fundo" />
+            <textarea class="texto_decod" minlength="20"></textarea>
+            <button class="btn-copiar" onclick="copiar()">Copiar</button>
+        </div>
+    </main>
+    <footer><p class="rodape" >®Claudemir Sewald 2024</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
