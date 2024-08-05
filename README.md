@@ -1,4 +1,4 @@
-# codificador_decodificador
+# codificador_decodificador By Claudemir Sewald
 
 O projeto "Codificador Decodificador" está orgulhosamente hospedado no GitHub, acessível através do link https://github.com/my-Hubgit/codificador_decodificador. O deploy foi realizado na plataforma Vercel, e pode ser visualizado pela comunidade no seguinte endereço: https://codificador-decodificador-iota.vercel.app/. Convido a todos para explorarem esta aplicação e apreciá-la em sua plenitude.
 
