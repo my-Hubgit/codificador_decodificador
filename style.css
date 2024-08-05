@@ -26,7 +26,7 @@ body {
     text-align: center;
     width: 100%;
     padding: 4px;
-    font-size: 25px;
+    font-size: 90%;
     font-family: var(--fonte);
     margin-top: 9px;
    background-color: #9e6f50;
@@ -120,9 +120,12 @@ body {
     margin-left: 13%;
     margin-right: 13%;
     text-align: center;  
+    flex-direction: row;
 }
 
-
+.txt_informa{
+    font-family: var(--fonte);
+}
 .btn-codificar {
     background-color: #39991021;
     width: 250px;
@@ -145,10 +148,12 @@ body {
 .btn-decodificar {
     background-color: #39991021;
     width: 250px;
+    height: 50px;
     font-size: 25px;
     border-radius: 18px;
     font-family: var(--fonte);
     transition: transform 0.5s ease;
+    margin-top: 3%;
     
 }
 
@@ -188,10 +193,54 @@ body {
 }
 
 .texto_cod:focus-within {
-    background-color: #d9d9be;
-  
+    background-color: #d9d9be;  
 }
 
 .rodape:hover {
     text-shadow: 0 0 20px #ff0004, 0 0 40px #ff0404;
 }
+
+@media (max-width: 768px) {
+    .botoes_principais {
+        flex-direction: column;
+        margin-left: 1%;        
+    }
+  
+
+    .btn-codificar, .btn-decodificar {
+        width: 100%; /* Ajuste a largura para 80% da largura da viewport em telas menores */
+        height: 7%; /* Ajuste a altura para 7% da altura da viewport em telas menores */
+        font-size: 3vh; /* Ajuste o tamanho da fonte para 3% da altura da viewport em telas menores */
+        align-items: center;
+    }
+
+    .btn-codificar:hover, .btn-decodificar:hover {
+        width: 100%; /* Ajuste a largura para 80% da largura da viewport em telas menores */
+        height: 7%; /* Ajuste a altura para 7% da altura da viewport em telas menores */
+        font-size: 3vh; /* Ajuste o tamanho da fonte para 3% da altura da viewport em telas menores */
+        align-items: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    .botoes_principais {
+        flex-direction: column;
+        margin-left: 1%;
+
+
+    }
+
+    .btn-codificar, .btn-decodificar {
+        width: 40vw; /* Ajuste a largura para 40% da largura da viewport */
+        height: 6vh; /* Ajuste a altura para 6% da altura da viewport */
+        font-size: 2.8vh; /* Ajuste o tamanho da fonte para 2.8% da altura da viewport */
+        align-items: center;
+        margin-left: 1%;
+    }
+
+    .btn-codificar:hover, .btn-decodificar:hover {
+        width: 40vw; /* Ajuste a largura para 40% da largura da viewport */
+        height: 6vh; /* Ajuste a altura para 6% da altura da viewport */
+        font-size: 2.8vh; /* Ajuste o tamanho da fonte para 2.8% da altura da viewport */
+        align-items: center;
+}}
